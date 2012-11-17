@@ -1,0 +1,18 @@
+Run <Obey$Dir>.Resources.ResFind Meaning
+|
+Set Meaning$Help MeaningRes:Meaning
+Set Meaning$Version "1.06"
+Set Meaning$Web "http://www.arcsite.de/hp/bracke/"
+Set Meaning$Title "Meaning"
+Set Meaning$Publisher "Bent Bracke"
+Set Meaning$Description "Finds the meaning of acronyms."
+Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages DESCRIPTION
+do Set Meaning$Description <ReadToken$Value>
+|
+Set MeaningSprites 2
+RMEnsure UtilityModule 5.00 Set MeaningSprites 1
+RMEnsure UtilityModule 4.00 Set MeaningSprites 0
+If <MeaningSprites> = 2 Then Iconsprites <Meaning$Dir>.!Sprites5
+If <MeaningSprites> = 1 Then Iconsprites <Meaning$Dir>.!Sprites4
+If <MeaningSprites> = 0 Then Iconsprites <Meaning$Dir>.!Sprites
+UnSet MeaningSprites

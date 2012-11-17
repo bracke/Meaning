@@ -1,0 +1,54 @@
+# StrongEd$Mode=Message
+_TaskName:Meaning
+VERS:1.06 (2005-02-19)
+# Obey file error messages
+DESCRIPTION:Finds the meaning of acronyms.
+RO:Meaning needs RISC OS 3 or later.
+MODTW:You need the taskwindow module to run Meaning.
+TASKEXIST:You can only have one copy of Meaning running at once.
+NESTED:Meaning requires the Nested Window Manager. This can be obtained by downloading the Universal Boot sequence from http://acorn.riscos.com/
+MODCLIB:You need the SharedCLibrary to run Meaning.
+MODTB:You need 'Toolbox' module (v1.71) to run Meaning.
+MODCM:You need the 'ColourMenu' module (v0.24) to run Meaning.
+MODCD:You need the 'ColourDBox' module (v0.23) to run Meaning.
+MODDCS:You need the 'DCS' module (v1.16) to run Meaning.
+MODFI:You need the 'FileInfo' module (v0.22) to run Meaning.
+MODFB:You need the 'FontDBox' module (v0.22) to run Meaning.
+MODFM:You need the 'FontMenu' module (v0.27) to run Meaning.
+MODIB:You need the 'IconBar' module (v1.22) to run Meaning.
+MODMU:You need the 'Menu' module (v0.40) to run Meaning.
+MODPT:You need the 'PrintDBox' module (v0.20) to run Meaning.
+MODPI:You need the 'ProgInfo' module (v0.20) to run Meaning.
+MODSAVE:You need the 'SaveAs' module (v0.22) to run Meaning.
+MODSC:You need the 'Scale' module (v0.19) to run Meaning.
+MODWD:You need the 'Window' module (v1.79) to run Meaning.
+MODTA:You need the 'ToolAction' module (v0.23) to run Meaning.
+MODTG:You need the 'TextGadgets' module (v0.49) to run Meaning.
+MODURI:You need the 'URI' module to run Meaning.
+# Error messages
+READING:Error reading acronym data. %0
+SEARCHING:Error searching for the meaning of the acronym. %0
+RENEW:Error while renewing. %0
+CHOICES:Error reading choices. %0
+MCONFIX:Error receiving the ConfiX Message. %0
+DISCARDING:Error discarding acronym data. %0
+TOOLBOXERROR:Error processing Toolbox Error. %0
+BUGZQUERY:Error answering a query from Bugz. %0
+BUGZCREATE:Error creating Bugz report. %0
+NOBUGZ:Please locate the Bugz application. %0
+HOMEPAGE:Error viewing Homepage. %0
+SENDEMAIL:Error sending E-Mail. %0
+MQUIT:Error receiving 'Quit' Message. %0
+TQUIT:Error receiving Toolbox 'Quit' Message. %0
+VIEWMANUAL:Error opening Manual. %0
+VIEWIHELP:Error running starting interactive help. %0
+VIEWCHAPTER:Error opening chapter in manual. %0 
+OPENWINDOW:Error opening main window. %0
+POSSAVE:Error saving the window position. %0
+#
+OPENDATAMENU:Error opening 'Data' Menü. %0
+VIEWDATAENTRY:Error opening data file. %0
+VIEWDATA:Error opening data directory.
+#
+UNTITLED:Untitled
+NOTFOUND:Unknown acronym.

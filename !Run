@@ -1,0 +1,26 @@
+Run <Obey$Dir>.!Boot
+Run <Meaning$Dir>.Resources.IsTask Meaning
+If <Meaning$Task> <> 0 Then Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages TASKEXIST
+If <Meaning$Task> <> 0 Then ERROR 0 <ReadToken$Value>
+
+|
+RMEnsure UtilityModule 3.00 Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages RO
+RMEnsure UtilityModule 3.00 ERROR 0 <ReadToken$Value>
+| 
+RMEnsure WindowManager 3.80 Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages NESTED
+RMEnsure WindowManager 3.80 ERROR 0 <ReadToken$Value>
+|
+RMEnsure SharedCLibrary 0.01 System:modules.clib
+RMEnsure SharedCLibrary 0.01 Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages MODCLIB
+RMEnsure SharedCLibrary 0.01 ERROR 0 <ReadToken$Value>
+|
+Run <Meaning$Dir>.!Toolbox
+|
+UnSet Meaning$Start_URI_Handler
+RMEnsure AcornURI 0.12 Set Meaning$Start_URI_Handler 1
+<Meaning$Dir>.Resources.IgnoreErr RMEnsure AcornURI 0.12 RMLoad System:Modules.Network.URI
+RMEnsure AcornURI 0.12 UnSet Meaning$Start_URI_Handler
+RMEnsure AcornURI 0.12 Run <Meaning$Dir>.Resources.ReadToken MeaningRes:Messages MODURI
+RMEnsure AcornURI 0.12 ERROR 0 <ReadToken$Value>
+|
+<Meaning$Dir>.Resources.MinSlot <Meaning$Dir>.!RunImage %*0
